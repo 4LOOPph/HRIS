@@ -1,0 +1,31 @@
+<div class="container-fluid animated pulse" ng-controller="loginMessageController">
+    <div class="row login">
+        <img src="assets/img/4loop-logo-2.png" class="login-logo" />
+        <div class="login-header col-sm-4">
+            Login
+        </div>
+        <div class="login-view col-sm-4">
+            <!-- Login Message -->
+            <div class="login-message">
+                {{loginMessage}}
+            </div>
+            <!-- Username and Email Input Box -->
+            <div class="username">
+                <input type="text" class="user-input username" ng-model="user" />
+                <p class="input-label">Username</p>
+            </div>
+            <!-- Password -->
+            <div class="form-group has-success has-feedback">
+                <input type="text" class="user-input userpassword" ng-show="showpassword" ng-model="pass" />
+                <input type="password" class="user-input userpassword" ng-hide="showpassword" ng-model="pass" />
+                <span class="login glyphicon glyphicon-eye-open" aria-hidden="true" ng-click="showpassword=true" ng-hide="showpassword"></span>
+                <span class="login glyphicon glyphicon-eye-close" aria-hidden="true" ng-click="showpassword=false" ng-show="showpassword"></span>
+            </div>
+            <p class="input-label">Password</p>
+            <!-- Forgot Button -->
+            <p class="user-forgot"><a class="user-forgot" ui-sref="forgot">Forgot Password?</a></p>
+            <!--Login and Email Button-->
+            <button type="button" class="login-button" ng-click="submit()">LOGIN</button>
+        </div>
+    </div>
+</div>

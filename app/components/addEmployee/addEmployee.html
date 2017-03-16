@@ -1,0 +1,131 @@
+<div class="container-fluid">
+    <div class="row">
+        <sidebar></sidebar>
+        <div class="main-views animated fadeIn">
+            <add-employee-header></add-employee-header>
+            <div class="col-sm-3 add-employee-image text-center" ng-controller="employeesController">
+                <img src="assets/img/addEmployee-image.png" class="add-employee-image" />
+                <button type="button" class="upload-photo">Upload Photo</button>
+            </div>
+            <div class="col-sm-9 add-employee">
+                <form name="addEmployee">
+                    <!-- Column 12 -->
+                    <div class="col-sm-12 add-employee-info">
+                        <p class="add-employee-info">Employee ID</p>
+                        <input type="text" name="employeeId" class="form-control add-employee-info employee-id" ng-model="employee.empID" ng-required="true" />
+                    </div>
+                    <!-- Column 12 -->
+                    <div class="col-sm-4 add-employee-info">
+                        <p class="add-employee-info">Last Name</p>
+                        <input type="text" name="lastName" class="form-control add-employee-info" ng-model="employee.lastName" ng-required="true" />
+                    </div>
+                    <div class="col-sm-4 add-employee-info">
+                        <p class="add-employee-info">First Name</p>
+                        <input type="text" name="firstName" class="form-control add-employee-info" ng-model="employee.firstName" ng-required="true" />
+                    </div>
+                    <div class="col-sm-4 add-employee-info">
+                        <p class="add-employee-info">Middle Name/Initial</p>
+                        <input type="text" name="middleName" class="form-control add-employee-info" ng-model="employee.middleName" ng-required="true" />
+                    </div>
+                    <!-- Column 12 -->
+                    <div class="col-sm-4 add-employee-info">
+                        <p class="add-employee-info">Birth Date</p>
+                        <date-picker></date-picker>
+                    </div>
+                    <div class="col-sm-2 add-employee-info">
+                        <p class="add-employee-info">Age</p>
+                        <input type="number" name="age" class="form-control add-employee-info" ng-model="employee.age" ng-required="true" />
+                    </div>
+                    <div class="col-sm-2 add-employee-info">
+                        <p class="add-employee-info">Sex</p>
+                        <select name="sex" class="form-control add-employee-info" ng-model="employee.sex" ng-required="true">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4 add-employee-info">
+                        <p class="add-employee-info">Civil Status</p>
+                        <input type="text" name="civilStatus" class="form-control add-employee-info" ng-model="employee.civilStatus" ng-required="true" />
+                    </div>
+                    <!-- Column 12 -->
+                    <div class="col-sm-12 add-employee-info">
+                        <p class="add-employee-info">Present Address</p>
+                        <input type="text" name="presentAddress" class="form-control add-employee-info" ng-model="employee.presentAddress" ng-required="true" />
+                    </div>
+                    <!-- Column 12 -->
+                    <div class="col-sm-12 add-employee-info">
+                        <p class="add-employee-info">Provincial Address</p>
+                        <input type="text" name="provincialAddress" class="form-control add-employee-info" ng-model="employee.provincialAddress" ng-required="true" />
+                    </div>
+                    <!-- Column 12 -->
+                    <div class="col-sm-4 add-employee-info">
+                        <p class="add-employee-info">E-mail</p>
+                        <input type="email" name="email" class="form-control add-employee-info" ng-model="employee.email" ng-required="true" />
+                    </div>
+                    <div class="col-sm-8 add-employee-info">
+                        <p class="add-employee-info">Contact Number</p>
+                        <input type="text" name="contactNumber" class="form-control add-employee-info employee-contact-number" ng-model="employee.contactNumber" ng-required="true" />
+                    </div>
+                    <!-- Column 12 -->
+                    <div class="col-sm-4 add-employee-info">
+                        <p class="add-employee-info">Contact Person</p>
+                        <input type="text" name="contactPerson" class="form-control add-employee-info" ng-model="employee.contactPerson" ng-required="true" />
+                    </div>
+                    <div class="col-sm-8 add-employee-info">
+                        <p class="add-employee-info">Contact Person Number</p>
+                        <input type="text" name="contactPersonNumber" class="form-control add-employee-info employee-contact-person-number" ng-model="employee.contactPersonNumber" ng-required="true" />
+                    </div>
+                    <!-- Column 12 -->
+                    <div class="col-sm-4 add-employee-info">
+                        <p class="add-employee-info">Job Title</p>
+                        <select name="jobTitle" class="form-control add-employee-info" ng-model="employee.jobTitle" ng-required="true">
+                            <option>Sr. Software Developer</option>
+                            <option>Graphic Designer</option>
+                            <option>Business Analyst</option>
+                            <option>Spyware Developer</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4 add-employee-info">
+                        <p class="add-employee-info">Date Hired</p>
+                        <date-picker></date-picker>
+                    </div>
+                    <div class="col-sm-4 add-employee-info">
+                        <p class="add-employee-info">Job Status</p>
+                        <select name="jobStatus" class="form-control add-employee-info" ng-model="employee.jobStatus" ng-required="true">
+                            <option>Permanent</option>
+                            <option>Option1</option>
+                            <option>Option2</option>
+                            <option>Option3</option>
+                        </select>
+                    </div>
+                    <!-- Column 12 -->
+                    <div class="col-sm-4 add-employee-info">
+                        <p class="add-employee-info">TIN</p>
+                        <input type="text" name="tin" class="form-control add-employee-info" ng-model="employee.TIN" ng-required="true" />
+                    </div>
+                    <div class="col-sm-8 add-employee-info">
+                        <p class="add-employee-info">SSS</p>
+                        <input type="text" name="sss" class="form-control add-employee-info employee-SSS" ng-model="employee.SSS" ng-required="true" />
+                    </div>
+                    <!-- Column 12 -->
+                    <div class="col-sm-4 add-employee-info">
+                        <p class="add-employee-info">Pag-ibig</p>
+                        <input type="text" name="pagibig" class="form-control add-employee-info" ng-model="employee.pagIbig" ng-required="true" />
+                    </div>
+                    <div class="col-sm-8 add-employee-info">
+                        <p class="add-employee-info">PhilHealth</p>
+                        <input type="text" name="philHealth" class="form-control add-employee-info employee-phil-health" ng-model="employee.philHealth" ng-required="true" />
+                    </div>
+                    <!-- Column 12 (Buttons)-->
+                    <div class="col-sm-6 add-employee-button">
+                        <input type="button" class="add-employee-button" value="Cancel" ng-click="employee = null" />
+                    </div>
+                    <div class="col-sm-6 add-employee-button">
+                        <input type="submit" class="add-employee-button" value="Save" ng-disabled="addEmployee.$invalid" ng-click="insertData()" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <navbar></navbar>
+    </div>
+</div>

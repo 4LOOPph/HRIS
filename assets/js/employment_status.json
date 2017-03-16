@@ -1,0 +1,14 @@
+{
+	"employment_status": [{
+		"StatusID": 8, 
+		"StatusCode": "Permanent", 
+		"Status": "Permanent", 
+		"Description": "", 
+		"Remarks": "", 
+		"InActive": 0, 
+		"DateCreated": null, 
+		"CreatedBy": 0, 
+		"LastDateModified": null,
+		"LastModifiedBy": null
+	}]
+}

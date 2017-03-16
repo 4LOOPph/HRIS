@@ -1,0 +1,558 @@
+body {
+	background-image: url(main-background.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Lato', sans-serif;
+}
+
+/*---------------------------
+		Login
+		Style	
+---------------------------*/
+div.login {
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+}
+/**4Loop logo**/
+img.login-logo {
+	height: 6em;
+	display: block;/**center image**/
+    margin: auto;/**center image**/
+    margin-top: 6%;
+}
+/**login header**/
+div.login-header {
+	background: #308754;
+	color: white;
+	float: none;/**center login header**/
+    display: block;/**center login header**/
+	margin: 0 auto;/**center login header**/
+	margin-top: 2%;
+	font-size: 26px;
+	text-align: center;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	border-radius: 0.5em 0.5em 0em 0em;
+}
+button.back {
+	background: none;
+	border: none;
+	float: left;
+	margin-top: 0.1em;
+	margin-left: 3%;
+}
+div.header-forgot {
+	width: 60%;
+	margin: 0 auto;
+}
+/**login view**/
+div.login-view {
+	background: #ffffff;
+	float: none;/**center login view**/
+    display: block;/**center login view**/
+	margin: 0 auto;/**center login view**/
+	height: 100%;
+	padding-right: 2.5em;
+	padding-left: 2.5em;
+	padding-bottom: 2em;
+	border-radius: 0em 0em 0.8em 0.8em;
+}
+div.login-message {
+	position: absolute;/**center login message in an absolute position**/
+	top: 1em;/**center login message in an absolute position**/
+	left: 0;/**center login message in an absolute position**/
+	right: 0;/**center login message in an absolute position**/
+	text-align: center;/**center login message in an absolute position**/
+	color: #308754;
+	font-size: 16px;
+}
+div.forgot-message {
+	position: absolute;/**center login message in an absolute position**/
+	top: 1em;/**center login message in an absolute position**/
+	left: 0;/**center login message in an absolute position**/
+	right: 0;/**center login message in an absolute position**/
+	text-align: center;/**center login message in an absolute position**/
+	color: #308754;
+	font-size: 16px;
+}
+input.user-input {
+	border: none;
+	box-shadow: none;
+	border-bottom: 1.5px solid lightgray;
+	margin-top: 1em;
+	width: 100%;
+	font-size: 22px;
+	outline: none;
+	padding-right: 2em;
+}
+input.user-input:hover {
+	border-bottom: 1.5px solid #2e794e;
+}
+input.user-input:focus {
+	border-bottom: 1.5px solid #2e794e;
+}
+input.username {
+	margin-top: 3em;
+}
+span.login {
+	color: #308754;
+	float: right;
+	margin-top: -1.7em;
+	margin-right: 0.5em;
+}
+p.input-label {
+	color: gray;
+	margin-top: 0.4em; 
+}
+div.instruction {
+	margin-top: 3.4em;
+	margin-bottom: 3.3em;
+	font-size: 16px;
+}
+p.user-forgot {
+	margin-top: 1.5em;
+	text-align: center;
+	font-weight: bold;
+}
+a.user-forgot {
+	color: #308754;
+}
+button.login-button {
+	background: #ffffff;
+	color: #308754;
+	margin-top: 1.5em;
+	height: 3em;
+	width: 100%;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 0.5em;
+	border: solid;
+	border-width: 0.15em;
+	border-color: #308754;
+}
+button.login-button:hover {
+	background-color: #62bf88;
+	color: #ffffff;
+}
+
+/*---------------------------
+		Dashboard
+		Style	
+---------------------------*/
+/**navigation bar style**/
+div.navigation-bar {
+	background: #eef0ed;
+	position: fixed;
+	height: 4.5em;
+	width: 100%;
+	padding-top: 0.7em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+img.logo {
+	height: 3em;
+	float: left;
+}
+img.user {
+	height: 3em;
+}
+label.user {
+	color: #368d56;
+	margin-right: 1em;
+	font-size: 16px;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+/**user button**/
+button.user-button {
+	border: none;
+	font-size: 16px;
+	color: #eceeeb;
+	width: 100%;
+	height: 5em;
+}
+button.view-profile {
+	background: linear-gradient(to bottom, transparent 99.3%, gray 0.7%);
+}
+button.logout {
+	background: transparent;
+}
+button.user-button:hover {
+	background: #308754;
+}
+
+/**user dropdown**/
+div.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+div.dropdown-content {
+	display: none;
+	position: absolute;
+	background: rgba(19,40,60,0.6);
+	min-width: 200px;
+	z-index: 1;
+	margin-left: -5em;
+}
+div.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/**main button style**/
+div.main-buttons {
+	background: rgba(19,40,60,0.6);
+	position: fixed;
+	margin-top: 4.5em;
+	height: 100%;
+	width: 17%;
+}
+button.main-button {
+	background: linear-gradient(to bottom, transparent 99.3%, gray 0.7%);
+	color: #eceeeb;
+	border: none;
+	height: 12%;
+	width: 100%;
+	font-size: 16px;
+	text-align: left;
+	padding-left: 12%;
+}
+button.main-button:hover {
+	background: #308754;
+}
+button.main-button:focus {
+	background: #308754;
+}
+
+/**main views style**/
+div.main-views {
+	background: rgba(19,40,60,0.6);
+	margin-top: 6em;
+	margin-left: 18.5%;
+	margin-bottom: 1em;
+	float: left;
+	height: 100%;
+	width: 80%;
+}
+div.header {
+	background: #308754;
+	color: #eceeeb;
+	padding-top: 1.2%;
+	padding-bottom: 1.2%;
+	padding-left: 3%;
+	padding-right: 3%;
+	font-size: 24px;
+}
+label.header-title {
+	font-weight: normal;
+}
+div.search-add {
+	float: right;
+}
+input.search {
+	background: #308754;
+	border-style: hidden;
+	border-radius: 2em;
+	padding-right: 1.5em;
+	padding-left: 0.5em;
+}
+span.search-icon {
+	margin-left: -1.5em;
+	margin-right: 1em;
+}
+button.add {
+	background: #308754;
+	border: none;
+}
+button.add-employee-back {
+	background: #308754;
+	border: none;
+}
+table {
+	width: 100%;
+}
+tr.table-header {
+	background: rgba(19,40,60,0.7);
+	color: #eceeeb;
+}
+tr.table-content {
+	font-weight: 16px;
+	color: #eceeeb;
+}
+tr.table-content:hover {
+	background: rgba(48,135,84,0.5);
+}
+th.rowTitle {
+	text-align: center;
+	font-weight: normal;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+td.emp {
+	width: 9%;
+	padding-left: 3%;
+}
+td.name {
+	font-weight: bold;
+	padding-left: 3%;
+}
+a.name {
+	color: #ffffff;
+}
+
+/*---------------------------
+		Add Employee
+		Style	
+---------------------------*/
+/**main views style**/
+div.add-employee-image {
+	padding-bottom: 1em;
+	font-size: 16px;
+	margin-top: 1em;
+}
+img.add-employee-image {
+	width: 90%;
+}
+button.upload-photo {
+	background: transparent;
+	color: white;
+	border: solid;
+	border-color: white;
+	border-radius: 0.5em;
+	border-width: 2px;
+	height: 2.5em;
+	width: 70%;
+}
+button.upload-photo:hover {
+	background: #62bf88;
+}
+p.add-employee-info {
+	color: lightgray;
+	margin-top: 1.5em;
+	margin-bottom: -0.3em;
+}
+input.add-employee-info {
+	background: transparent;
+	width: 100%;
+	color: white;
+	border: none;
+	box-shadow: none;
+	border-bottom: 1.5px solid gray;
+	font-size: 16px;
+	font-weight: bold;
+}
+input.form-control {
+	border-radius: 0;
+}
+input.add-employee-info:hover {
+	border-bottom: 1.5px solid lightgray;
+}
+input.add-employee-info:focus {
+	border-bottom: 1.5px solid lightgray;
+}
+/**Individual Input Style**/
+div.add-employee-info {
+	margin-bottom: 0.5em;
+}
+input.employee-id {
+	width: 10em;
+}
+p.input-group {
+	width: 100%;
+}
+input.employee-contact-number {
+	width: 17em;
+}
+input.employee-contact-person-number {
+	width: 17em;
+}
+input.employee-SSS {
+	width: 17em;
+}
+input.employee-phil-health {
+	width: 17em;
+}
+input.form-control:focus {
+	box-shadow: none;
+}
+/**Input Validation Style**/
+input.add-employee-info.ng-invalid.ng-touched{
+	border-bottom: 1.5px solid orange;
+}
+/**Dropdown**/
+select.add-employee-info{
+	background: none;
+	width: 100%;
+	color: white;
+	border: none;
+	border-bottom: 1.5px solid gray;
+	font-size: 16px;
+	font-weight: bold;
+	box-shadow: none !important;
+}
+select.form-control {
+	border-radius: 0;
+}
+select.add-employee-info:hover {
+	border-bottom: 1.5px solid lightgray;
+}
+select.add-employee-info:focus {
+	border-bottom: 1.5px solid lightgray;
+}
+option {
+	color: black;
+	font-size: 14px;
+	font-weight: normal;
+}
+/**Button**/
+div.add-employee-button {
+	font-size: 16px;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+input.add-employee-button {
+	background: transparent;
+	color: white;
+	border: solid;
+	border-color: white;
+	border-radius: 0.5em;
+	border-width: 2px;
+	height: 3.5em;
+	width: 100%;
+}
+input.add-employee-button:hover {
+	background: #62bf88;
+}
+/**Disable the save button**/
+input[disabled="disabled"] {
+	opacity: 0.4;
+	cursor: not-allowed !important;
+}
+
+/*---------------------------
+		Date
+		Picker	
+---------------------------*/
+.full button span {
+	background-color: limegreen;
+	border-radius: 32px;
+	color: black;
+}
+.partially button span {
+	background-color: orange;
+	border-radius: 32px;
+	color: black;
+}
+/**Header button**/
+div>div>ul>li>div>div>div>table>thead>tr>th>button.btn {
+	background: #308754;
+	border: 0;
+	color: white;
+	height: 3em;
+	font-size: 16px;
+}
+div>div>ul>li>div>div>div>table>thead>tr>th>button.btn:hover{
+	background: #62bf88;
+}
+div>div>ul>li>div>div>div>table>thead>tr>th>button.btn:active {
+	background: #62bf88;
+}
+div>div>ul>li>div>div>div>table>thead>tr>th>button.btn:focus {
+	background: #62bf88;
+}
+
+div>div>ul>li.uib-button-bar {
+	display: none;
+}
+div>div>ul.uib-datepicker-popup {
+	background: transparent;
+	box-shadow: none;
+	border: none;
+}
+div>div>ul>li {
+	background: linear-gradient(to top, papayawhip 99.5%, transparent 0.5%);
+}
+/**change text color of the current date**/
+.text-info {
+	color: #62bf88;
+	font-weight: bold;
+}
+.text-muted {
+	color: lightgray;
+}
+.btn.btn-default {
+	border: 0;
+	height: 2.7em;
+}
+.btn.btn-default:focus {
+	border: none !important;
+	outline: 0 !important;
+	background: #308754;
+	color: white;
+}
+/**Setted date**/
+.btn.btn-default:hover {
+	border: none !important;
+	outline: 0 !important;
+	background: #62bf88;
+	color: white;
+}
+/**Date today**/
+.btn-info {
+	color: #fff;
+	background-color: white;
+	border-color: #46b8da;
+}
+/**Setted date**/
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+	color: white;
+	background-color: #308754;
+	border-color: #adadad;
+}
+
+/*---------------------------
+		Payroll
+		Period	
+---------------------------*/
+td.payroll {
+	text-align: center;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+button.edit {
+	background: transparent;
+	border: none;
+}
+
+/*---------------------------
+		Angular
+		Xeditable	
+---------------------------*/
+/**text**/
+.editable-click, a.editable-click {
+	text-decoration: none;
+	color: white;
+	border-bottom: none;
+}
+.editable-click:hover, a.editable-click:hover {
+	color: white;
+}
+/**dropdown**/
+.editable-wrap .editable-controls > select{
+    background: transparent;
+    color: white;
+    box-shadow: none;
+    border: none;
+    position: absolute;
+	margin-left: -3.7em;
+	margin-top: -1.3em;
+	text-align: center;
+}
+.editable-wrap .editable-controls > select > option{
+	background: white;
+}
+.editable-buttons {
+	display: none;
+}

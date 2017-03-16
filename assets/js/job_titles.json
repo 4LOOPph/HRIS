@@ -1,0 +1,16 @@
+{
+	"job_titles": [{
+		"jt_id": 5,
+		"jt_name": "SENIOR SOFTWARE DEVELOPER",
+		"jt_addedby": 0,
+		"jt_dateadded": "2015-11-03 00:00:00",
+		"jt_modifiedby": 0,
+		"jt_datemodified": "2016-07-28 00:00:00",
+		"jt_code": "SSD",
+		"jt_shortname": "SSD",
+		"jt_desc": "",
+		"jt_classid": 2,
+		"jt_groupid": 0,
+		"inactive": 0
+	}]
+}

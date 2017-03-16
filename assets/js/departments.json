@@ -1,0 +1,18 @@
+{
+	"departments": [{
+		"d_id": 1,
+		"d_name": "SOLUTIONS",
+		"d_addedby": 0,
+		"d_dateadded": "2014-05-28 00:00:00",
+		"d_modifiedby": 0,
+		"d_datemodified": "2015-11-03 00:00:00",
+		"d_code": "SOL",
+		"short_name": "SOL",
+		"d_head": "",
+		"branch_id": 1,
+		"tel_no": "",
+		"fax_no": "",
+		"d_desc": "Solutions",
+		"inactive": 0
+	}]
+}

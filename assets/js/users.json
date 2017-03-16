@@ -1,0 +1,25 @@
+{
+	"users": [{
+		"UserID": 1,
+		"UserName": "admin",
+		"Password": "admin",
+		"UserGroupID": "4LOOP.123",
+		"WallPaper": "",
+		"DateCreated": "2015-11-03",
+		"CreatedBy": 0,
+		"Inactive": 0,
+		"AccessLimit": "",
+		"DateModified": "2016-07-01",
+		"ModifiedBy": "admin",
+		"IsOnline": 0,
+		"LastLoggedDate": "2017-01-02",
+		"LastWorkstationID": "",
+		"LastIPUsed": "",
+		"FullName": "Admin N. Admin",
+		"Email": "admin@gmail.com",
+		"MobileNo": "09999999999",
+		"Picture": "",
+		"IsEmployee": 1,
+		"EmployeeID": "4LOOP.123"
+	}]
+}

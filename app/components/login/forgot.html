@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="row login">
+        <img src="assets/img/4loop-logo-2.png" class="login-logo" />
+        <div class="login-header col-sm-4">
+            <button class="back" ui-sref="login"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
+            <div class="header-forgot">Forgot Password</div>
+        </div>
+        <div class="login-view col-sm-4">
+            <form name="emailValidation">
+                <!-- Login Message -->
+                <div class="forgot-message" ng-show="emailValidation.email.$touched && emailValidation.email.$invalid">
+                    Error in your input.
+                </div>
+                <!-- Username and Email Input Box -->
+                <div class="email">
+                    <input type="email" name="email" class="user-input username" ng-model="emailVal.email" ng-required="true" />
+                    <p class="input-label">Email</p>
+                </div>
+                <!-- Instruction -->
+                <div class="instruction">
+                    We will send you an email with instructions on how to reset your password.
+                </div>
+                <!--Login and Email Button-->
+                <button type="button" class="login-button">SEND EMAIL</button>
+            </form>
+        </div>
+    </div>
+</div>
