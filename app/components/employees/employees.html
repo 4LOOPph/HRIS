@@ -14,12 +14,12 @@
                         <th class="rowTitle">Status</th>
                     </tr>
                     <tr class="table-content" ng-repeat="emp in employees | filter:searchEmp">
-                        <td class="emp"><img src="{{emp.photo}}"></td>
-                        <td class="name"><a class="name">{{emp.lastName + ", " + emp.firstName + " " + emp.middleName + "."}}</a></td>
-                        <td>{{emp.empID}}</td>
-                        <td>{{emp.jobTitle}}</td>
-                        <td>{{emp.department}}</td>
-                        <td>{{emp.jobStatus}}</td>
+                        <td class="photo emp"><img src="{{emp.photo}}"></td>
+                        <td class="name emp"><a class="name">{{emp.lastName + ", " + emp.firstName + " " + emp.middleName + "."}}</a></td>
+                        <td class="id emp">{{emp.empID}}</td>
+                        <td class="jtitle emp">{{emp.jobTitle}}</td>
+                        <td class="dept emp">{{emp.department}}</td>
+                        <td class="jstatus emp">{{emp.jobStatus}}</td>
                     </tr>
                 </table>
             </div>

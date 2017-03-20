@@ -9,29 +9,44 @@ angular.module('myApp')
             //view payroll period
             $scope.payrollPeriod = response.data.payrollPeriod;
             //angular-xeditable (month dropdown)
-            $scope.user = {
-                status: 2
+            $scope.monthSelected = {
+                monthID: 2
             };
-            $scope.statuses = [
-                { value: 1, text: 'January' },
-                { value: 2, text: 'February' },
-                { value: 3, text: 'March' },
-                { value: 4, text: 'April' },
-                { value: 5, text: 'May' },
-                { value: 6, text: 'June' },
-                { value: 7, text: 'July' },
-                { value: 8, text: 'August' },
-                { value: 9, text: 'September' },
-                { value: 10, text: 'October' },
-                { value: 11, text: 'November' },
-                { value: 12, text: 'December' }
+            $scope.months = [
+                { value: 1, month: 'January' },
+                { value: 2, month: 'February' },
+                { value: 3, month: 'March' },
+                { value: 4, month: 'April' },
+                { value: 5, month: 'May' },
+                { value: 6, month: 'June' },
+                { value: 7, month: 'July' },
+                { value: 8, month: 'August' },
+                { value: 9, month: 'September' },
+                { value: 10, month: 'October' },
+                { value: 11, month: 'November' },
+                { value: 12, month: 'December' }
             ];
-            $scope.showStatus = function() {
-                var selected = $filter('filter')($scope.statuses, { value: $scope.user.status });
-                return ($scope.user.status && selected.length) ? selected[0].text : 'Not set';
+            $scope.showMonth = function() {
+                var selected = $filter('filter')($scope.months, { value: $scope.monthSelected.monthID });
+                return ($scope.monthSelected.monthID && selected.length) ? selected[0].month : 'Not set';
+            };
+            //angular-xeditable (year dropdown)
+           
+            //angular-xeditable (payroll term dropdown)
+            $scope.payrollTermSelected = {
+                payrollTermID: 2
+            };
+            $scope.payrollTerms = [
+                { value: 1, term: 'Monthly' },
+                { value: 2, term: 'Bi-monthly: 1st Cut...' },
+                { value: 3, term: 'Bi-monthly: 2nd Cut...' }
+            ];
+            $scope.showPayrollTerm = function() {
+                var selected = $filter('filter')($scope.payrollTerms, { value: $scope.payrollTermSelected.payrollTermID });
+                return ($scope.payrollTermSelected.payrollTermID && selected.length) ? selected[0].term : 'Not set';
             };
             //angular-xeditable (date picker)
-            $scope.user = {
+            $scope.dateCovered = {
                 dob: new Date(1984, 4, 15)
             };
             $scope.opened = {};

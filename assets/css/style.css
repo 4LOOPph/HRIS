@@ -279,6 +279,9 @@ tr.table-header {
 }
 tr.table-content {
 	font-weight: 16px;
+	
+}
+td.emp {
 	color: #eceeeb;
 }
 tr.table-content:hover {
@@ -290,7 +293,7 @@ th.rowTitle {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
-td.emp {
+td.photo {
 	width: 9%;
 	padding-left: 3%;
 }
@@ -521,10 +524,6 @@ td.payroll {
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 }
-button.edit {
-	background: transparent;
-	border: none;
-}
 
 /*---------------------------
 		Angular
@@ -545,6 +544,7 @@ button.edit {
     color: white;
     box-shadow: none;
     border: none;
+    border-bottom: 1.5px solid gray;
     position: absolute;
 	margin-left: -3.7em;
 	margin-top: -1.3em;
@@ -555,4 +555,27 @@ button.edit {
 }
 .editable-buttons {
 	display: none;
+}
+/**date picker**/
+.input-group .form-control:first-child, .input-group-addon:first-child {
+	background: transparent;
+	position: absolute;
+	color: white;
+	width: 12em;
+	margin-left: -6em;
+	margin-top: -1.45em;
+	border: none;
+	border-bottom: 1.5px solid gray;
+	text-align: center;
+}
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+    background: none;
+    color: white;
+    position: absolute;
+    margin-left: 5em;
+    margin-top: -1.45em;
+}
+
+td.periodCode {
+	color: white;
 }
